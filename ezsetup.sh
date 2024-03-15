@@ -1,6 +1,9 @@
 #!/bin/sh
 
+figlet Ez Install
+
 # Install and compile applications
+sudo cp .config/pacman.conf /etc/pacman.conf
 sudo pacman -Syu --noconfirm
 sudo pacman -S --needed --noconfirm base-devel git vim btop bat ranger
 
@@ -9,7 +12,7 @@ pushd paru/
 makepkg -Si
 popd
 rm -rf paru/
-sudo cp paru.conf /etc/paru.conf
+sudo cp .config/paru.conf /etc/paru.conf
 
 # git clone https://aur.archlinux.org/librewolf-bin.git
 # pushd librewolf-bin/
@@ -20,10 +23,10 @@ sudo cp paru.conf /etc/paru.conf
 # Copy config files
 ranger --copy-config=all
 cp rc.conf $HOME/.config/ranger
-sudo cp rc.conf /root/.config/ranger
+sudo cp .config/rc.conf /root/.config/ranger
 
 cp .vimrc $HOME
-sudo cp -a  .vimrc /etc/vimrc
+sudo cp -a  .config/.vimrc /etc/vimrc
 
 
 sed -i "s/PS1='.*/PS1='\[\e[91m\][\[\e[93m\]\u\[\e[92m\]@\[\e[96m\]\H\[\e[0m\] \[\e[95m\]\w\[\e[91m\]]\[\e[0m\]\\$'/" bash.bashrc
