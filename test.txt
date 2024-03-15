@@ -1,14 +1,5 @@
+inityy
 
-alias brc='sudo vim /etc/bash.bashrc'
-alias br='source /etc/bash.bashrc'
+PS1
 
-alias vrc='vim /home/val/.vimrc && sudo cp /home/val/.vimrc /etc/vimrc'
-
-alias r='ranger'
-alias rr='sudo ranger'
-
-alias c='clear'
-
-alias ls='exa -gF --grid --icons'
-alias ll='exa -laF --header --icons'
-alias lt='exa -laF --tree --level=2 --header --icons'
+alias= fdsfds

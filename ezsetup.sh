@@ -25,6 +25,9 @@ sudo cp rc.conf /root/.config/ranger
 cp .vimrc $HOME
 sudo cp -a  .vimrc /etc/vimrc
 
+
+sed -i "s/PS1='.*/PS1='\[\e[91m\][\[\e[93m\]\u\[\e[92m\]@\[\e[96m\]\H\[\e[0m\] \[\e[95m\]\w\[\e[91m\]]\[\e[0m\]\\$'/" bash.bashrc
+
 printf "
 alias brc='sudo vim /etc/bash.bashrc'
 alias br='source /etc/bash.bashrc'
@@ -39,3 +42,5 @@ alias c='clear'
 alias ls='exa -gF --grid --icons'
 alias ll='exa -laF --header --icons'
 alias lt='exa -laF --tree --level=2 --header --icons'" >> test.txt
+
+source /etc/bash.bashrc
