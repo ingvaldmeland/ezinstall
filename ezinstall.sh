@@ -1,11 +1,10 @@
 #!/bin/sh
 clear
-figlet Ez Install
 
 # Install applications
 sudo cp .config/pacman.conf /etc/pacman.conf # Enables multilib repo
 sudo pacman -Syu --noconfirm
-sudo pacman -S --needed --noconfirm base-devel git vim btop bat ranger eza zathura zathura-pdf-mupdf 
+sudo pacman -S --needed --noconfirm base-devel git vim btop bat ranger eza figlet zathura zathura-pdf-mupdf 
 
 # Compile applications from the aur
 # git clone https://aur.archlinux.org/paru.git
