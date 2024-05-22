@@ -1,4 +1,4 @@
-# EzInstall
+# EzInstall 💻🔥
 My personal script for installing packages and copying over dotfiles on arch based distributions
 
 The list of packages currently include; ``git vim btop bat ranger eza figlet zathura zathura-pdf-mupdf`` aur; ``paru, librewolf-git`` more packages will be added as I see fit.
