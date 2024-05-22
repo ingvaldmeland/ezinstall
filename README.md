@@ -1,7 +1,7 @@
 # EzInstall
 My personal script for installing packages and copying over dotfiles on arch based distributions
 
-The list of packages currently include; ``git vim btop bat ranger eza zathura zathura-pdf-mupdf`` aur; ``paru, librewolf-git`` more packages will be added as I see fit.
+The list of packages currently include; ``git vim btop bat ranger eza figlet zathura zathura-pdf-mupdf`` aur; ``paru, librewolf-git`` more packages will be added as I see fit.
 
 This script will override config files for vim, ranger, pacman and paru. It will also append new alias shortcuts to your bashrc aswell as replace your PS1 prompt.
 
