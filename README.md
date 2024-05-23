@@ -6,10 +6,12 @@ The list of packages currently include; ``git vim btop bat ranger eza figlet zat
 This script will override config files for vim, ranger, pacman and paru. It will also append new alias shortcuts to your bashrc aswell as replace your PS1 prompt.
 
 The list of aliases include:
-```
+```console
+# Shortcuts for editing bashrc
 alias brc='sudo vim /etc/bash.bashrc'
 alias br='source /etc/bash.bashrc'
 
+# Shortcut for editing vimrc for all users
 alias vrc='vim $HOME/.vimrc && sudo cp $HOME/.vimrc /etc/vimrc'
 
 alias r='ranger'
@@ -28,16 +30,16 @@ alias lt='exa -laF --tree --level=2 --header --git --icons'"
 
 # Installing
 Clone from git
-```bash
+```console
 git clone https://github.com/ingvaldmeland/ezinstall.git
 ```
 
 Make the script executable
-```bash
+```console
 sudo chmod +x ezinstall.sh
 ```
 
 Run the script
-```bash
+```console
 ./ezinstall
 ```
