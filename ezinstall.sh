@@ -10,14 +10,14 @@ sudo pacman -S --needed --noconfirm base-devel git vim btop bat ranger eza figle
 # Compile applications from the aur
 git clone https://aur.archlinux.org/paru.git
 pushd paru/
-makepkg -Si
+makepkg -si
 popd
 rm -rf paru/
 sudo cp .config/paru.conf /etc/paru.conf
 
 git clone https://aur.archlinux.org/librewolf-bin.git
 pushd librewolf-bin/
-makepkg -Si
+makepkg -si
 popd
 rm -rf librewolf-bin/
 
